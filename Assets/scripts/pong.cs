@@ -24,11 +24,11 @@ public class pong : MonoBehaviour
 
         if (xdirection == 1f)
         {
-            xPosition = xPosition + 0.02f;
+            xPosition = xPosition + 7f * Time.deltaTime;
         }
         if (xdirection == 0f)
         {
-            xPosition = xPosition + -0.02f;
+            xPosition = xPosition + -7f * Time.deltaTime;
         }
 
         if (xPosition > 9.8f)
@@ -43,11 +43,11 @@ public class pong : MonoBehaviour
 
         if (ydirection == 1f)
         {
-            yPosition = yPosition + 0.02f;
+            yPosition = yPosition + 7f * Time.deltaTime;
         }
         if (ydirection == 0f)
         {
-            yPosition = yPosition + -0.02f;
+            yPosition = yPosition + -7f * Time.deltaTime;
         }
 
         if (yPosition > 4.8f)
