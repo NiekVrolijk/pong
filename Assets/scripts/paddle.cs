@@ -7,18 +7,18 @@ public class paddle : MonoBehaviour
 {
     public float speed = 5f;
     public string leftOrRight;
-
+    public float maxValue = 3.75f;
 
     void paddleControl(KeyCode up,KeyCode down)
     {
-        if (Input.GetKey(up))
+        if (Input.GetKey(up) && transform.position.y < maxValue)
         {
-            Debug.Log("up");
+            
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(down))
+        else if (Input.GetKey(down) && transform.position.y > -maxValue)
         {
-            Debug.Log("down");
+            
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
     }
