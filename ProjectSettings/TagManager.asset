@@ -6,6 +6,7 @@ TagManager:
   tags:
   - horizontal
   - vertical
+  - paddle
   layers:
   - Default
   - TransparentFX
