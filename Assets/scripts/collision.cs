@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class collision : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class collision : MonoBehaviour
     public float ySpeed = 3f;
     public int lOrR = 0;
     public int lOrR2 = 0;
+    public Text score;
 
 
     // Start is called before the first frame update
@@ -45,20 +48,25 @@ public class collision : MonoBehaviour
         
         if (collision.gameObject.CompareTag("horizontal")) 
         {
-           
             ySpeed = ySpeed * -1f;
-        }else if (collision.gameObject.CompareTag("vertical"))
+        }else if (collision.gameObject.CompareTag("vertical1"))
         {
-        
             xSpeed = xSpeed * -1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else if (collision.gameObject.CompareTag("vertical2"))
+        {
+            xSpeed = xSpeed * -1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        
-        
+
+
         if (collision.gameObject.CompareTag("paddle"))
         {
 
-            xSpeed = xSpeed * -1f;
+            xSpeed = xSpeed * -1.05f;
+            ySpeed = ySpeed * 1.01f;
         }
 
     }
