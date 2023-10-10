@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class paddle : MonoBehaviour
 {
+    //var
     public float speed = 5f;
     public string leftOrRight;
     public float maxValue = 3.75f;
 
+    //movement (and make sure paddle doesn't leave our world
     void paddleControl(KeyCode up,KeyCode down)
     {
         if (Input.GetKey(up) && transform.position.y < maxValue)
@@ -32,6 +34,7 @@ public class paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //diside if it should be left paddle or right paddle
         if(leftOrRight == "left")
         {
          paddleControl(KeyCode.W,KeyCode.S); 
