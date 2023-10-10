@@ -66,6 +66,8 @@ public class collision : MonoBehaviour
             xSpeed = xSpeed * -1f;
             xPosition = 0f;
             yPosition = 0f;
+            xSpeed = 3f;
+            ySpeed = 3f;
             player2Score++;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -74,6 +76,8 @@ public class collision : MonoBehaviour
             xSpeed = xSpeed * -1f;
             xPosition = 0f;
             yPosition = 0f;
+            xSpeed = 3f;
+            ySpeed = 3f; 
             player1Score++;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
