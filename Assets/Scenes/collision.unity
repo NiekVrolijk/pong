@@ -750,8 +750,8 @@ MonoBehaviour:
   yPosition: 0
   xSpeed: 3
   ySpeed: 3
+  UOrD: 0
   lOrR: 0
-  lOrR2: 0
 --- !u!1 &1014073345
 GameObject:
   m_ObjectHideFlags: 0
