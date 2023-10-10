@@ -1,3 +1,7 @@
+
+
+//tried to make score here . . .  i failed
+
 //using System.Collections;
 //using System.Collections.Generic;
 //using TMPro;

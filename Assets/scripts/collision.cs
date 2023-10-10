@@ -17,16 +17,17 @@ public class collision : MonoBehaviour
     public int lOrR = 0;
     public int lOrR2 = 0;
 
+    private GameObject scoreGameObject;
+    private TMPro.TMP_Text scoreboard;
+    private int player1Score;
+    private int player2Score;
 
-    //public TMP_Text score1;
-    //public string score2 = "0|0";
-    //public int scoreLeft = 0;
-    //public int scoreRight = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        //score1.text = score2;
+        scoreGameObject = GameObject.Find("score");
+        scoreboard = scoreGameObject.GetComponent<TMPro.TMP_Text>();
 
         transform.position = new Vector3(xPosition, yPosition, 0f);
         var lOrR = Random.Range(0, 2);
@@ -52,24 +53,6 @@ public class collision : MonoBehaviour
 
         transform.position = new Vector3(xPosition, yPosition, 0f);
 
-        //if (scoreLeft == 1 && scoreRight == 0)
-        //{
-        //    score2 = "1|0";
-        //}
-        //else if (scoreLeft == 2 && scoreRight == 0)
-        //{
-        //    score2 = "2|0";
-        //}
-
-        //if (scoreRight == 1 && scoreLeft == 0)
-        //{
-        //    score2 = "0|1";
-        //}
-        //else if (scoreRight == 2 && scoreLeft == 0)
-        //{
-        //    score2 = "0|2";
-        //}
-
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -83,16 +66,16 @@ public class collision : MonoBehaviour
             xSpeed = xSpeed * -1f;
             xPosition = 0f;
             yPosition = 0f;
+            player2Score++;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //scoreRight += 1;
-}
+        }
         else if (collision.gameObject.CompareTag("vertical2"))
         {
             xSpeed = xSpeed * -1f;
             xPosition = 0f;
             yPosition = 0f;
+            player1Score++;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //scoreLeft += 1;
         }
 
 
@@ -103,6 +86,10 @@ public class collision : MonoBehaviour
             xSpeed = xSpeed * -1.05f;
             ySpeed = ySpeed * 1.01f;
         }
-
+        
+    }
+    private void LateUpdate()
+    {
+        scoreboard.text = player1Score.ToString() + " - " + player2Score.ToString();
     }
 }
