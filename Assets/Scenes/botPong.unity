@@ -155,9 +155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  botSpeed: 1
   leftOrRight: bot
   maxValue: 3.75
-  ball: {fileID: 0}
+  ball: {fileID: 920138968}
 --- !u!212 &134718845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -394,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  botSpeed: 1
   leftOrRight: left
   maxValue: 3.75
   ball: {fileID: 0}
