@@ -25,6 +25,7 @@ public class collision : MonoBehaviour
     private TMPro.TMP_Text scoreboard;
     private int player1Score;
     private int player2Score;
+    private int winScore = 3;
 
 
     // Start is called before the first frame update
@@ -58,6 +59,23 @@ public class collision : MonoBehaviour
         yPosition = yPosition + ySpeed * Time.deltaTime;
 
         transform.position = new Vector3(xPosition, yPosition, 0f);
+
+        //if someone scores 3 times they win
+        if(player1Score >= winScore)
+        {
+            SceneManager.LoadScene("winScreenLeft");
+        } 
+        if(player2Score >= winScore)
+        {
+            SceneManager.LoadScene("winScreenRight");
+        }
+
+        //you can stop by pressing esc
+        if (Input.GetKey(KeyCode.Escape))
+        {
+
+            SceneManager.LoadScene("menu");
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
