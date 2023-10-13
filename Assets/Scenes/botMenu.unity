@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 634991079}
   - component: {fileID: 634991078}
   m_Layer: 5
-  m_Name: win massage
+  m_Name: menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,8 +351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -393.5, y: -221.4}
-  m_SizeDelta: {x: 18.5143, y: 3.7407}
+  m_AnchoredPosition: {x: -393.5, y: -221.39998}
+  m_SizeDelta: {x: 17.7858, y: 9.9334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634991078
 MonoBehaviour:
@@ -374,12 +374,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'press 1 to play pong for 2
+  m_text: 'press 1 to play on easy
 
-    press 2 to play pong against bot
+    press 2 to play on medium
 
-    press
-    3 to play mystery pong >:)'
+    press 3 to
+    play on hard
+
+    press 4 if you dont want to win
+
+    press L if you want to
+    play left
+
+    press R if you wan to play right
+
+    it will be random if neither
+    is choosen
+
+    press enter to play'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -618,9 +630,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1448112373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2e76a862de27842b8961041d4d223c, type: 3}
+  m_Script: {fileID: 11500000, guid: 15695f841911dab40a28988f50ded224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mode: 0
+  leftOrRight: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

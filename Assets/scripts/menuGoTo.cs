@@ -14,14 +14,14 @@ public class menuGoTo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //go to respective destination
         if (Input.GetKey(KeyCode.Alpha1))
         {
-
             SceneManager.LoadScene("collision");
         }
         else if (Input.GetKey(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("menu");
+            SceneManager.LoadScene("botMenu");
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {

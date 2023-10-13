@@ -23,5 +23,11 @@ public class winScreen : MonoBehaviour
         {
             SceneManager.LoadScene("menu");
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+
+            SceneManager.LoadScene("menu");
+        }
     }
 }
