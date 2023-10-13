@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class paddle : MonoBehaviour
 {
     //var
     public float speed = 5f;
+    public float botSpeed = 1f;
     public string leftOrRight;
     public float maxValue = 3.75f;
+    public GameObject ball;
 
     //movement (and make sure paddle doesn't leave our world
     void paddleControl(KeyCode up,KeyCode down)
@@ -35,12 +38,22 @@ public class paddle : MonoBehaviour
     void Update()
     {
         //diside if it should be left paddle or right paddle
-        if(leftOrRight == "left")
+        //left player
+        if (leftOrRight == "left")
         {
-         paddleControl(KeyCode.W,KeyCode.S); 
-        } else if(leftOrRight == "right")
+            paddleControl(KeyCode.W, KeyCode.S);
+        }
+        //right player
+        else if (leftOrRight == "right")
         {
-            paddleControl(KeyCode.UpArrow,KeyCode.DownArrow);
+            paddleControl(KeyCode.UpArrow, KeyCode.DownArrow);
+        }
+        //bot
+        else if (leftOrRight == "bot")
+        {
+
+            transform.position = new Vector3(transform.position.x, ball.transform.position.y, 0f); 
+
         }
            
     }
