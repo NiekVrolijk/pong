@@ -9,6 +9,7 @@ public class botMenuGoTo : MonoBehaviour
     //save var
     public int mode;
     public string leftOrRight = "or";
+    public int lOrR = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,14 +65,20 @@ public class botMenuGoTo : MonoBehaviour
 
                 } else if (leftOrRight == "right")
                 {
-                    //not making the scene go to ER
                     SceneManager.LoadScene("botPongER");
 
                 }
                 else
                 {
-                    SceneManager.LoadScene("botPong");
-
+                    var lOrR = Random.Range(0, 2);
+                    if (lOrR == 0)
+                    {
+                        SceneManager.LoadScene("botPongEL");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("botPongER");
+                    }
                 }
             }
 
