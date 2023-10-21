@@ -60,11 +60,12 @@ public class botMenuGoTo : MonoBehaviour
             {
                 if (leftOrRight == "left")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongEL");
 
                 } else if (leftOrRight == "right")
                 {
-                    SceneManager.LoadScene("botPong");
+                    //not making the scene go to ER
+                    SceneManager.LoadScene("botPongER");
 
                 }
                 else

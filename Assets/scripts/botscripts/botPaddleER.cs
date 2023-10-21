@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class paddle : MonoBehaviour
+public class botPaddleER : MonoBehaviour
 {
     //var
     public float speed = 5f;
@@ -60,17 +60,21 @@ public class paddle : MonoBehaviour
         }
            
     }
-    //bot (not of use here)
+
+    //bot
     void Botpaddle()
     {
         transform.position = new Vector3(botXPosition, botYPosition, 0f);
         //transform.position = new Vector3(transform.position.x, ball.transform.position.y, 0f);
-        if (ball.transform.position.y > paddle2.transform.position.y && transform.position.y < maxValue)
+        //bot up
+        if (ball.transform.position.y > paddle1.transform.position.y && transform.position.y < maxValue)
         {
-            botYPosition += 3f * Time.deltaTime;
-        } else if (ball.transform.position.y < paddle2.transform.position.y && transform.position.y > -maxValue)
+            botYPosition += 2f * Time.deltaTime;
+        } 
+        //bot down
+        else if (ball.transform.position.y < paddle1.transform.position.y && transform.position.y > -maxValue)
         {
-            botYPosition += -3f * Time.deltaTime;
+            botYPosition += -2f * Time.deltaTime;
         }
     }
 }

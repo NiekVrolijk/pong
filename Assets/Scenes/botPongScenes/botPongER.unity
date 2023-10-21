@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 134718845}
   - component: {fileID: 134718844}
   - component: {fileID: 134718847}
+  - component: {fileID: 134718848}
   m_Layer: 0
   m_Name: paddle2
   m_TagString: paddle
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134718843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571d15ab493862b4ba14da8aeec0d240, type: 3}
   m_Name: 
@@ -274,6 +275,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &134718848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134718843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec29fddde2679b6428c7ac24fec67802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  botYPosition: 0
+  botXPosition: -7.5
+  leftOrRight: right
+  maxValue: 3.75
+  ball: {fileID: 920138968}
+  paddle1: {fileID: 398141752}
+  paddle2: {fileID: 134718843}
 --- !u!1 &189356631
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +399,7 @@ GameObject:
   - component: {fileID: 398141754}
   - component: {fileID: 398141753}
   - component: {fileID: 398141756}
+  - component: {fileID: 398141757}
   m_Layer: 0
   m_Name: paddle1
   m_TagString: paddle
@@ -392,7 +414,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398141752}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 571d15ab493862b4ba14da8aeec0d240, type: 3}
   m_Name: 
@@ -517,6 +539,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &398141757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398141752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec29fddde2679b6428c7ac24fec67802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  botYPosition: 0
+  botXPosition: -7.5
+  leftOrRight: bot
+  maxValue: 3.75
+  ball: {fileID: 920138968}
+  paddle1: {fileID: 398141752}
+  paddle2: {fileID: 134718843}
 --- !u!1 &444170704
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +640,7 @@ GameObject:
   - component: {fileID: 920138972}
   - component: {fileID: 920138971}
   - component: {fileID: 920138973}
+  - component: {fileID: 920138974}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -754,6 +797,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b43ca99203ad84594a5261f5a47730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xPosition: 0
+  yPosition: 0
+  xSpeed: 3
+  ySpeed: 3
+  UOrD: 0
+  lOrR: 0
+--- !u!114 &920138974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920138968}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289bd054a5b4f2b4687ab2df6f7cf420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xPosition: 0
