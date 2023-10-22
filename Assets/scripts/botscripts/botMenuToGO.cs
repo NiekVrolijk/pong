@@ -87,18 +87,25 @@ public class botMenuGoTo : MonoBehaviour
             {
                 if (leftOrRight == "left")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongML");
 
                 }
                 else if (leftOrRight == "right")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongMR");
 
                 }
                 else
                 {
-                    SceneManager.LoadScene("botPong");
-
+                    var lOrR = Random.Range(0, 2);
+                    if (lOrR == 0)
+                    {
+                        SceneManager.LoadScene("botPongML");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("botPongMR");
+                    }
                 }
             }
 
@@ -107,18 +114,25 @@ public class botMenuGoTo : MonoBehaviour
             {
                 if (leftOrRight == "left")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongHL");
 
                 }
                 else if (leftOrRight == "right")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongHR");
 
                 }
                 else
                 {
-                    SceneManager.LoadScene("botPong");
-
+                    var lOrR = Random.Range(0, 2);
+                    if (lOrR == 0)
+                    {
+                        SceneManager.LoadScene("botPongHL");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("botPongHR");
+                    }
                 }
             }
 

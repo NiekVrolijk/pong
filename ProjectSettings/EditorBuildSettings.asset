@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/botPongScenes/winScreenPlayer.unity
     guid: fa4bd4fb2880d5b4cbadc68223e26cc5
+  - enabled: 1
+    path: Assets/Scenes/botPongScenes/botPongML.unity
+    guid: 89117e459d74f814b855f31208bce62e
+  - enabled: 1
+    path: Assets/Scenes/botPongScenes/botPongMR.unity
+    guid: d5702913d43242c4abe19a2ee5309327
   m_configObjects: {}
