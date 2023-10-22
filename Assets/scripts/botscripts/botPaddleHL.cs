@@ -68,12 +68,12 @@ public class botPaddleHL : MonoBehaviour
         //bot up
         if (ball.transform.position.y > paddle2.transform.position.y && transform.position.y < maxValue)
         {
-            botYPosition += 4f * Time.deltaTime;
+            botYPosition += 5f * Time.deltaTime;
         } 
         //bot down
         else if (ball.transform.position.y < paddle2.transform.position.y && transform.position.y > -maxValue)
         {
-            botYPosition += -4f * Time.deltaTime;
+            botYPosition += -5f * Time.deltaTime;
         }
     }
 }

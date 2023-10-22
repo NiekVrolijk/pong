@@ -9,7 +9,7 @@ public class botMenuGoTo : MonoBehaviour
     //save var
     public int mode;
     public string leftOrRight = "or";
-    public int lOrR = 0;
+    public int lOrR;
     // Start is called before the first frame update
     void Start()
     {
@@ -141,18 +141,25 @@ public class botMenuGoTo : MonoBehaviour
             {
                 if (leftOrRight == "left")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongIL");
 
                 }
                 else if (leftOrRight == "right")
                 {
-                    SceneManager.LoadScene("botPong");
+                    SceneManager.LoadScene("botPongIR");
 
                 }
                 else
                 {
-                    SceneManager.LoadScene("botPong");
-
+                    var lOrR = Random.Range(0, 2);
+                    if (lOrR == 0)
+                    {
+                        SceneManager.LoadScene("botPongIL");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("botPongIR");
+                    }
                 }
             }
             
@@ -161,18 +168,65 @@ public class botMenuGoTo : MonoBehaviour
             {
                 if (leftOrRight == "left")
                 {
-                    SceneManager.LoadScene("botPong");
+                    var mode = Random.Range(0, 3);
+                    if (mode == 0)
+                    {
+                        SceneManager.LoadScene("botPongEL");
+                    }
+                    else if (mode == 1)
+                    {
+                        SceneManager.LoadScene("botPongML");
+                    }
+                    else if (mode == 2)
+                    {
+                        SceneManager.LoadScene("botPongHL");
+                    }
 
                 }
                 else if (leftOrRight == "right")
                 {
-                    SceneManager.LoadScene("botPong");
+                    var mode = Random.Range(0, 3);
+                    if (mode == 0)
+                    {
+                        SceneManager.LoadScene("botPongER");
+                    }
+                    else if (mode == 1)
+                    {
+                        SceneManager.LoadScene("botPongMR");
+                    }
+                    else if (mode == 2)
+                    {
+                        SceneManager.LoadScene("botPongHR");
+                    }
 
                 }
                 else
                 {
-                    SceneManager.LoadScene("botPong");
-
+                    var mode = Random.Range(0, 6);
+                    if (mode == 0)
+                    {
+                        SceneManager.LoadScene("botPongEL");
+                    }
+                    else if (mode == 1)
+                    {
+                        SceneManager.LoadScene("botPongER");
+                    }
+                    else if (mode == 2)
+                    {
+                        SceneManager.LoadScene("botPongML");
+                    }
+                    else if (mode == 3)
+                    {
+                        SceneManager.LoadScene("botPongMR");
+                    }
+                    else if (mode == 4)
+                    {
+                        SceneManager.LoadScene("botPongHL");
+                    }
+                    else if (mode == 5)
+                    {
+                        SceneManager.LoadScene("botPongHR");
+                    }
                 }
             }
         }
