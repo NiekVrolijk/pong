@@ -113,6 +113,7 @@ public class collision : MonoBehaviour
 
             //reset speed and ball goes to winner
             xSpeed = -3f;
+            ySpeed = -3f;
 
             //up or down is random
             var lOrR = Random.Range(0, 2);
