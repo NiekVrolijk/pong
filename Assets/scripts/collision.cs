@@ -131,8 +131,8 @@ public class collision : MonoBehaviour
         if (collision.gameObject.CompareTag("paddle"))
         {
 
-            xSpeed = xSpeed * -1.05f;
-            ySpeed = ySpeed * 1.01f;
+            xSpeed = xSpeed * -1.1f;
+            ySpeed = ySpeed * 1.05f;
         }
         
     }

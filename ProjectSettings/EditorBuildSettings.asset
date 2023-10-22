@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/botPongScenes/botPongMR.unity
     guid: d5702913d43242c4abe19a2ee5309327
+  - enabled: 1
+    path: Assets/Scenes/botPongScenes/botPongHL.unity
+    guid: af44e707e38182b4d8af450fb122331f
+  - enabled: 1
+    path: Assets/Scenes/botPongScenes/botPongHR.unity
+    guid: 291c25d7c6c9ccf4cbb1ce3480f7a7b9
   m_configObjects: {}
