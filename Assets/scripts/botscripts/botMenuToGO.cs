@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 public class botMenuGoTo : MonoBehaviour
 {
@@ -10,6 +12,15 @@ public class botMenuGoTo : MonoBehaviour
     public int mode;
     public string leftOrRight = "or";
     public int lOrR;
+
+    //text
+    public GameObject difGameObject;
+    public GameObject lOrRGameObject;
+    public GameObject menuGameObject;
+    public TMPro.TMP_Text dif;
+    public TMPro.TMP_Text pLOrR;
+    public TMPro.TMP_Text menu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,27 +40,33 @@ public class botMenuGoTo : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha1))
         {
             mode = 1;
+            dif.text = "easy: press 1 ; X \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha2))
         {
             mode = 2;
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; X \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {
             mode = 3;
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; X \r\nif you dont wanne win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha4))
         {
             mode = 4;
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; X ";
         }
 
         if (Input.GetKey(KeyCode.L))
         {
             leftOrRight = "left";
+            pLOrR.text = "if you want to play left: press L ; X\r\nif you wan to play right: press R ; O";
         }
         else if (Input.GetKey(KeyCode.R))
         {
             leftOrRight = "right";
+            pLOrR.text = "if you want to play left: press L ; O\r\nif you wan to play right: press R ; X";
         }
 
         
