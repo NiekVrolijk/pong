@@ -8,6 +8,7 @@ public class botPaddleML : MonoBehaviour
 {
     //var
     public float speed = 5f;
+    public float botSpeed = 5f;
     public float botYPosition = 0f;
     public float botXPosition;
     public string leftOrRight;
@@ -68,12 +69,12 @@ public class botPaddleML : MonoBehaviour
         //bot up
         if (ball.transform.position.y > paddle2.transform.position.y && transform.position.y < maxValue)
         {
-            botYPosition += 4f * Time.deltaTime;
+            botYPosition += botSpeed * Time.deltaTime;
         } 
         //bot down
         else if (ball.transform.position.y < paddle2.transform.position.y && transform.position.y > -maxValue)
         {
-            botYPosition += -4f * Time.deltaTime;
+            botYPosition += -botSpeed * Time.deltaTime;
         }
     }
 }

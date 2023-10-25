@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.AnimatedValues;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,8 +14,8 @@ public class collision : MonoBehaviour
     public float xPosition = 0f;
     public float yPosition = 0f;
 
-    public float xSpeed = 3f;
-    public float ySpeed = 3f;
+    public float xSpeed = 4f;
+    public float ySpeed = 4f;
 
     //random direction
     public int UOrD = 0;
@@ -26,6 +27,10 @@ public class collision : MonoBehaviour
     private int player1Score;
     private int player2Score;
     private int winScore = 3;
+
+    //ball increase speed
+    public float ballSpeedIncreaseX = 1.05f;
+    public float ballSpeedIncreaseY = 1.02f;
 
 
     // Start is called before the first frame update
@@ -92,8 +97,8 @@ public class collision : MonoBehaviour
             yPosition = 0f;
 
             //reset speed and ball goes to winner
-            xSpeed = 3f;
-            ySpeed = 3f;
+            xSpeed = 4f;
+            ySpeed = 4f;
 
             //up or down is random
             var UOrD = Random.Range(0, 2);
@@ -113,8 +118,8 @@ public class collision : MonoBehaviour
             yPosition = 0f;
 
             //reset speed and ball goes to winner
-            xSpeed = -3f;
-            ySpeed = -3f;
+            xSpeed = -4f;
+            ySpeed = -4f;
 
             //up or down is random
             var lOrR = Random.Range(0, 2);
@@ -133,8 +138,8 @@ public class collision : MonoBehaviour
         if (collision.gameObject.CompareTag("paddle"))
         {
 
-            xSpeed = xSpeed * -1.1f;
-            ySpeed = ySpeed * 1.05f;
+            xSpeed = xSpeed * -ballSpeedIncreaseX;
+            ySpeed = ySpeed * ballSpeedIncreaseY;
         }
         
     }

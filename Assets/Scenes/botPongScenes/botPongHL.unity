@@ -801,10 +801,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 0
   yPosition: 0
-  xSpeed: 3
-  ySpeed: 3
+  xSpeed: 4
+  ySpeed: 4
   UOrD: 0
   lOrR: 0
+  ballSpeedIncreaseX: 1.05
+  ballSpeedIncreaseY: 1.02
 --- !u!114 &920138974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,10 +821,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPosition: 0
   yPosition: 0
-  xSpeed: 3
-  ySpeed: 3
+  xSpeed: 4
+  ySpeed: 4
   UOrD: 0
   lOrR: 0
+  ballSpeedIncreaseX: 1.05
+  ballSpeedIncreaseY: 1.02
 --- !u!1 &1014073345
 GameObject:
   m_ObjectHideFlags: 0
