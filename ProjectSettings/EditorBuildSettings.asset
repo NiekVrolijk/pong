@@ -53,4 +53,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/botPongScenes/botPongIR.unity
     guid: 9a4902f6453b17544bb4a260d90358b9
+  - enabled: 1
+    path: Assets/Scenes/mysteryPong/mysteryPong.unity
+    guid: 8f896c3ef4561c54db6fdb3f6ede8ac4
+  - enabled: 1
+    path: Assets/Scenes/mysteryPong/winScreenMLeft.unity
+    guid: 4790818396398e74eb05ba8569693b21
+  - enabled: 1
+    path: Assets/Scenes/mysteryPong/winScreenMRight.unity
+    guid: ea0f9c229914e494c9442aded8b36446
   m_configObjects: {}

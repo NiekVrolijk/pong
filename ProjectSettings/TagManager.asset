@@ -9,6 +9,7 @@ TagManager:
   - paddle
   - vertical1
   - vertical2
+  - ball
   layers:
   - Default
   - TransparentFX

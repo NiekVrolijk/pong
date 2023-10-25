@@ -25,7 +25,7 @@ public class menuGoTo : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {
-            SceneManager.LoadScene("menu");
+            SceneManager.LoadScene("mysteryPong");
         }
     }
 }
