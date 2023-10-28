@@ -40,33 +40,33 @@ public class botMenuGoTo : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha1))
         {
             mode = 1;
-            dif.text = "easy: press 1 ; X \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; O ";
+            dif.text = "easy: press 1 ; X \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont want to win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha2))
         {
             mode = 2;
-            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; X \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; O ";
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; X \r\nhard: press 3 ; O \r\nif you dont want to win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {
             mode = 3;
-            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; X \r\nif you dont wanne win: press 4 ; O ";
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; X \r\nif you dont want to win: press 4 ; O ";
         }
         else if (Input.GetKey(KeyCode.Alpha4))
         {
             mode = 4;
-            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont wanne win: press 4 ; X ";
+            dif.text = "easy: press 1 ; O \r\nmedium: press 2 ; O \r\nhard: press 3 ; O \r\nif you dont want to win: press 4 ; X ";
         }
 
         if (Input.GetKey(KeyCode.L))
         {
             leftOrRight = "left";
-            pLOrR.text = "if you want to play left: press L ; X\r\nif you wan to play right: press R ; O";
+            pLOrR.text = "if you want to play left: press L ; X\r\nif you want to play right: press R ; O";
         }
         else if (Input.GetKey(KeyCode.R))
         {
             leftOrRight = "right";
-            pLOrR.text = "if you want to play left: press L ; O\r\nif you wan to play right: press R ; X";
+            pLOrR.text = "if you want to play left: press L ; O\r\nif you want to play right: press R ; X";
         }
 
         

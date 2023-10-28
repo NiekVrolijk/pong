@@ -564,7 +564,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "easy: press 1 ; O\nmedium: press 2 ; O \nhard: press 3 ; O \nif you dont
-    wanne win: press 4 ; O "
+    want to win: press 4 ; O "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -896,8 +896,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'if you want to play left: press L ; O
 
-    if you wan to play right: press
-    R ; O
+    if you want to play right:
+    press R ; O
 
 '
   m_isRightToLeft: 0
