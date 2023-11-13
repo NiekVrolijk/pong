@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ball.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 52252c1d573100943b6ea8d7f60d30fd
+  - enabled: 1
     path: Assets/Scenes/PVPPongScenes/collision.unity
     guid: 5812540da927a1341932d9b7791e7d5c
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PVPPongScenes/winScreenRight.unity
     guid: eafc3512f40356746b5a24fbae99e294
-  - enabled: 1
-    path: Assets/Scenes/menu.unity
-    guid: 52252c1d573100943b6ea8d7f60d30fd
   - enabled: 1
     path: Assets/Scenes/botPongScenes/botMenu.unity
     guid: 29e0db660ff2078479f9e8515dd522cc
